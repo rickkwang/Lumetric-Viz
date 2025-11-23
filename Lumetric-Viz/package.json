@@ -3,10 +3,37 @@
   "private": true,
   "version": "1.8.0",
   "type": "module",
+  "main": "main.js",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsc --noEmit && vite build",
+    "build-force": "vite build",
+    "preview": "vite preview",
+    "electron:dev": "electron .",
+    "electron:build": "npm run build-force && electron-builder --dir",
+    "electron:build-mac": "npm run build-force && electron-builder --mac",
+    "electron:build-win": "npm run build-force && electron-builder --win",
+    "electron:build-linux": "npm run build-force && electron-builder --linux"
+  },
+  "author": "Lumetric Team",
+  "description": "A high-performance, interactive 3D data visualization engine",
+  "build": {
+    "appId": "com.lumetric.viz",
+    "productName": "Lumetric-Viz",
+    "copyright": "Copyright © 2024 Lumetric Team",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": ["dmg"]
+    },
+    "win": {
+      "target": ["nsis"]
+    },
+    "linux": {
+      "target": ["AppImage"]
+    },
+    "directories": {
+      "output": "dist_electron"
+    }
   },
   "dependencies": {
     "@react-spring/three": "^9.7.3",
@@ -24,6 +51,8 @@
     "@types/three": "^0.160.0",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.18",
+    "electron": "^39.2.3",
+    "electron-builder": "^26.0.12",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.2.2",
