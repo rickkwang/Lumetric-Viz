@@ -78,7 +78,7 @@ Use the **Control Panel** in the sidebar:
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/lumetric-3d-viz.git
+git clone https://github.com/rickkwang/Lumetric-Viz.git
 cd lumetric-3d-viz
 npm install
 ```
