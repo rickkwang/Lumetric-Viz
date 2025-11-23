@@ -1,7 +1,5 @@
 # Lumetric-Viz[README.md](https://github.com/user-attachments/files/23696652/README.md)
 
-![Lumetric Banner](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2070)
-
 **Lumetric** is a high-performance, interactive 3D data visualization engine. It transforms static Excel and CSV spreadsheets into immersive 3D environments, allowing users to explore data trends using Radial, Bar, Bubble, and Surface projection models.
 
 Built with **React**, **Three.js**, **TypeScript**, and **Electron**, it runs seamlessly as both a modern Web Application and a standalone Desktop Application (Windows/macOS).
