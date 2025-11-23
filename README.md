@@ -79,7 +79,7 @@ Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/rickkwang/Lumetric-Viz.git
-cd lumetric-3d-viz
+cd Lumetric-Viz
 npm install
 ```
 
